@@ -1,13 +1,113 @@
+body {
+    background-color: #1b2433;
+    color: white;
+}
+
+.periodic-table {
+    width:fit-content;
+    width: 87vw;
+}
+
 .element {
-    width: 80px;
-    border: 1px solid black;
-    border-radius: 3px;
+    width: 60px;
+    border: 1px solid white;
+    margin: 0 2px;
 }
 
 .symbol {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .name {
-    font-size: 14px;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+.number {
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+.symbol, .name {
+    text-align: center;
+}
+
+.first, .second, .third, .four, .five, .six, .seven, .eight, .nine {
+    position: relative;
+    margin-bottom: 4px;
+    display: flex;
+}
+
+.right, .left {
+    display: flex;
+}
+
+.right {
+    /* float: right; */
+    position: absolute;
+    right: 0;
+}
+
+.eight-right{
+    position: absolute;
+    right: 66px;
+}
+
+.nine-right {
+    right: 66px;
+    top: 72px;
+}
+
+.bottom {
+    padding-top: 40px;
+}
+
+.alkali {
+    border: 1px solid #f501ff;
+    color: #f501ff;
+}
+
+.alkaline {
+    border: 1px solid #aa4bff;
+    color: #aa4bff;
+}
+
+.actinides {
+    border: 1px solid #ee2625;
+    color: #ee2625;
+}
+
+.noble {
+    border: 1px solid #f7bf06;
+    color: #f7bf06;
+}
+
+.halogens {
+    border: 1px solid #ffed2c;
+    color: #ffed2c;
+}
+
+.lanthanides {
+    border: 1px solid #bafb39;
+    color: #bafb39;
+}
+
+.transition-m {
+    border: 1px solid #35cff9;
+    color: #35cff9;
+}
+
+.sm {
+    border: 1px solid #10f281;
+    color: #10f281;
+}
+
+.basic {
+    border: 1px solid #f27351;
+    color: #f27351;
+}
+
+.nm {
+    border: 1px solid #309cff;
+    color: #309cff;
 }
