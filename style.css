@@ -1,17 +1,37 @@
 body {
+    /* background-color: white;
+    background-color: black; */
     background-color: #1b2433;
     color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
 }
 
 .periodic-table {
-    width:fit-content;
-    width: 87vw;
+    width: fit-content;
+    margin: 30px;
+}
+
+.title {
+    text-align: center;
+    color: #cbd5e2;
 }
 
 .element {
-    width: 60px;
+    width: 66px;
     border: 1px solid white;
     margin: 0 2px;
+}
+
+.element:hover {
+    /* background-color: #10f281;
+    color: #1b2433;
+    box-shadow: 0 0 10px #10f281, 0 0 40px #10f281, 0 0 80px #10f281; */
+    cursor: pointer;
 }
 
 .symbol {
@@ -19,13 +39,21 @@ body {
 }
 
 .name {
-    font-size: 12px;
+    font-size: 11px;
     padding-bottom: 2px;
+    overflow-x: scroll;
+    padding: 0 3px;
 }
+
+.name::-webkit-scrollbar {
+    display: none;
+  }
+  
 
 .number {
     padding-left: 4px;
     padding-top: 2px;
+    font-size: 12px;
 }
 
 .symbol, .name {
@@ -43,23 +71,16 @@ body {
 }
 
 .right {
-    /* float: right; */
     position: absolute;
     right: 0;
 }
 
-.eight-right{
-    position: absolute;
-    right: 66px;
-}
-
-.nine-right {
-    right: 66px;
-    top: 72px;
-}
-
 .bottom {
-    padding-top: 40px;
+    padding-top: 20px;
+}
+
+.eight, .nine {
+    margin-left: 131.5px;
 }
 
 .alkali {
@@ -110,4 +131,70 @@ body {
 .nm {
     border: 1px solid #309cff;
     color: #309cff;
+}
+
+.periodic-table-show {
+    padding-bottom: 20px;
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: #cbd5e2;
+}
+
+
+.color {
+    width: 60px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.grps {
+    display: flex;
+    justify-content: center;
+}
+
+.alkali-metal {
+    background-color: #f700ff;
+}
+
+.alkaline-metal {
+    background-color: #a251fa;
+}
+
+.transition-metal{
+    background-color: #32d4f3;
+}
+
+.semi-metal{
+    background-color: #0df572;
+}
+
+.halogen-metal{
+    background-color: #f7f335;
+}
+
+.lanthanide-metal{
+    background-color: #bbfe32;
+}
+
+.basic-metal {
+    background-color: #f37331;
+}
+
+.nonmetal {
+    background-color: #2da0f9;
+}
+
+.nobelgas {
+    background-color: #fbbc03;
+}
+
+.actinide {
+    background-color: #fa2225;
 }
