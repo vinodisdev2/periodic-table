@@ -2,7 +2,6 @@ body {
     /* background-color: white;
     background-color: black; */
     background-color: #1b2433;
-    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,6 +24,7 @@ body {
     width: 66px;
     border: 1px solid white;
     margin: 0 2px;
+    position: relative;
 }
 
 .element:hover {
@@ -32,7 +32,10 @@ body {
     color: #1b2433;
     box-shadow: 0 0 10px #10f281, 0 0 40px #10f281, 0 0 80px #10f281; */
     cursor: pointer;
+    
+
 }
+
 
 .symbol {
     font-size: 28px;
@@ -197,4 +200,25 @@ body {
 
 .actinide {
     background-color: #fa2225;
+}
+
+/* .active {
+    height: 100px;
+    width: 100px;
+} */
+
+.active, #active {
+    color: white;
+    border: white 1px solid;
+    /* z-index: 100; */
+    /* background-color: yellow; */
+}
+
+.activeBody {
+    /* background-color: black; */
+    /* opacity: 10; */
+    /* background-bl; */
+    /* blur */
+    /* -webkit-filter: blur(8px); */
+    filter: blur(8px);
 }
